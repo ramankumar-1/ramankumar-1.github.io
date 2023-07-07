@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Portfolio Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Raman Kumar</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+                
+    </head>
+    <body class="main-content">
+        <header class="section sec1 header active" id="about">
+            <div class="header-content">
+                <div class="left-header">
+                    <div class="profile-image">
+                        <img src="./resources/newphoto.jpg" id="profile-image">
+                    </div>
+                </div>
+                <div class="right-header">
+                    <h1 class="name-container">
+                        Hi, I am Raman Kumar.
+                    </h1>
+                    <p class="about-me">
+                        <br>
+                        <b>I am a Software Developer, Student, and a Data Science Enthusiast !</b>
+                        <br>
+                        Final Year CSE Student at VIT, Chennai (2020-24)
+                        <br>
+                        Open to work !
+                    </p>     
+                    <div class="resume-download-button-container">
+                        <button id="resume-download-button" onclick=downloadResume()>Download Resume </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="section sec2 skills" id="skills">
+                <div class="section-header">
+                    <h1>My Skills</h1>
+                </div> 
+                <div class="section-content">
+                    <img alt="python" class="skillslogo" src="./resources/python.jpeg"><br>
+                    <img alt="r" class="skillslogo" src="./resources/r.jpeg"><br>
+                    <img alt="htmlcssjs" class="skillslogo" src="./resources/htmlcssjs.png"><br>
+                    <img alt="java" class="skillslogo" src="./resources/java.png"><br>
+                </div>
+            </section>
+            <section class="section sec3 projects" id="projects">
+                <div class="section-header">
+                    <h1>Projects built by me</h1>
+                </div>
+                <div class="project-content">
+                    Updating Soon.........
+                </div>
+                
+            </section>
+            <section class="section sec4 contact" id="contact">
+                <div class="section-header">
+                    <h1>Connect with me !</h1><br>
+                </div>
+                <div>
+                    <button class="socialconnect" onclick="openLinkedin()">
+                        <i class="fa-brands fa-linkedin fa-2xl" style="color: #0072b1;"></i>
+                        &nbsp;&nbsp;Linkedin
+                    </button>
+                    <br><br>
+                    <button class="socialconnect"  onclick="openGithub()">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                        &nbsp;&nbsp;GitHub
+                    </button>
+                    <br><br>
+                    <button class="socialconnect"  onclick="openKaggle()">
+                        <i class="fab fa-kaggle" style="color: #0d97c5;"></i>
+                        &nbsp;&nbsp;Kaggle
+                    </button>
+                    <br><br>
+                    <button class="socialconnect"  onclick="openGmail()">
+                        <i class="fa-regular fa-envelope fa-2xl" style="color: #dd2727;"></i>
+                        &nbsp;&nbsp;Mail Me
+                    </button>
+                    <br><br>
+
+                </div>
+            </section>
+        </main>
+
+        <div class="controls">
+            <div class="control control-1 active-btn" data-id="about">
+                About
+            </div>
+            <div class="control control-2" data-id="skills">
+                Skills
+            </div>
+            <div class="control control-3" data-id="projects">
+                Projects
+            </div>
+            <div class="control control-4" data-id="contact">
+                Contact
+            </div>
+        </div>
+
+        <div class="nightMode">
+            <button type="button" class="nightModebutton" id="nightModebutton" onclick="toggleMode()">
+                <i class="fa-solid fa-sun fa-2xl"></i>
+            </button>
+        </div>
+
+    <script src="./script.js"></script>
+    </body>
+</html>
